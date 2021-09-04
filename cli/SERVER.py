@@ -21,4 +21,3 @@ questions = [
 ]
 answers = prompt(questions)
 pprint(answers)
-print(home)
