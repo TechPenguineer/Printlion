@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}}</title>
-    <link rel="stylesheet" href="./static/bootstrap.min.css">
-</head>
-<body>
-    <div>
+<html lang="en" class="theme-light">
 
-    </div>
-    <script src="./static/THEME.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="../static/stylesheets/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Theme Switcher</h1>
+    <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+  </div>
+  <script src="./static/THEME.js"></script>
 </body>
+
 </html>
