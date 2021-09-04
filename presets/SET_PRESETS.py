@@ -1,2 +1,0 @@
-from ..cli import DIRECTORIES
-print(DIRECTORIES.PLUGIN_DIR)

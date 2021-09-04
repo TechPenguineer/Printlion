@@ -1,0 +1,17 @@
+from DIRECTORIES import FULL_USER_DIRECTORIES,PRESETS_DIR
+
+PRESETS = open(PRESETS_DIR, "w")
+
+DATA =  {"""
+{
+    temperature_type = "C",
+    pla: {
+        CELCIUS_BED_TEMPERATURE: 70,
+        CELCIUS_TOOL_TEMPERATURE: 200,
+        FAHRENHEIT_BED_TEMPERATURE: 158,
+        FAHRENHEIT_TOOL_TEMPERATURE: 392
+    }
+}
+"""}
+
+PRESETS.write
