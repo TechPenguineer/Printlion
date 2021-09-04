@@ -8,13 +8,10 @@
   <link rel="stylesheet" href="../static/stylesheets/bootstrap.css">
 </head>
 
-<body>
-  <div class="container">
-    <h1>Theme Switcher</h1>
-    <label id="switch" class="switch">
-            <input type="checkbox" onchange="toggleTheme()" id="slider">
-            <span class="slider round"></span>
-        </label>
+<body onload="toggleTheme()">
+  <div class="top_nav">
+    <h1 class="TOP_BAR_TITLE">PrintLion</h1>
+    <a id="theme_selector" class="theme_selector" onclick="toggleTheme()">Switch to [THEME]</a>
   </div>
   <script src="./static/THEME.js"></script>
 </body>
