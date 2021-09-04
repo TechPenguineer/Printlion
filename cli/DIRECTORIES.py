@@ -6,9 +6,10 @@ from LOGGER import *
 home = str(Path.home())
 FULL_USER_DIRECTORIES = home + "\\.config\\PrintLion"
 
+PLUGIN_DIR = os.path.join(FULL_USER_DIRECTORIES,"plugins.json")
+PRESETS_DIR = os.path.join(FULL_USER_DIRECTORIES,"presets.json")
+
 def CONFIG_FILE_CREATE():
-    PLUGIN_DIR = os.path.join(FULL_USER_DIRECTORIES,"plugins.json")
-    PRESETS_DIR = os.path.join(FULL_USER_DIRECTORIES,"presets.json")
     if not os.path.exists(PLUGIN_DIR):
         PLUGIN_FILE = open(PLUGIN_DIR, "w")
     else:
