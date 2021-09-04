@@ -2,6 +2,7 @@
 from __future__ import print_function, unicode_literals
 from PyInquirer import prompt
 from pprint import pprint
+from DIRECTORIES import *
 
 PORT_OPTIONS = ['127.0.0.1', 'localhost']
 
@@ -20,3 +21,4 @@ questions = [
 ]
 answers = prompt(questions)
 pprint(answers)
+print(home)
